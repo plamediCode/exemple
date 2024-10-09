@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rencontres des Clubs de Football</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Navigation -->
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#home">Accueil</a></li>
+                <li><a href="#clubs">Clubs</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Section d'accueil -->
+    <section id="home">
+       <center> <img src="logo.jpg"></center>
+        <h1>Bienvenue sur Rencontres des Clubs de Football</h1>
+        <p>Trouvez des clubs pour organiser des matchs et des événements sportifs !</p>
+        <center><a href="#clubs" class="btn">Voir les clubs</a></center>
+    </section>
+
+    <!-- Section des clubs -->
+    <section id="clubs">
+        <h2>Clubs disponibles</h2>
+        <div class="club-list">
+            <div class="club">
+                <h3>Club 1</h3>
+                <p>Niveau : Amateur</p>
+                <p>Localisation : Paris</p>
+                <button class="btn match-btn">Proposer un match</button>
+            </div>
+            <div class="club">
+                <h3>Club 2</h3>
+                <p>Niveau : Semi-professionnel</p>
+                <p>Localisation : Lyon</p>
+                <button class="btn match-btn">Proposer un match</button>
+            </div>
+            <!-- Ajoutez d'autres clubs ici -->
+        </div>
+    </section>
+
+    <!-- Section de contact -->
+    <section id="contact">
+        <h2>Contactez-nous</h2>
+        <form id="contact-form">
+            <label for="name">Nom :</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email :</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Message :</label>
+            <textarea id="message" name="message" required></textarea>
+
+            <center><button type="submit" class="btn">Envoyer</button></center>
+        </form>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
